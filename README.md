@@ -1,6 +1,9 @@
 # Data Product
 This repo is created for Coursera course project - Developing Data Product
 
+The web slidify can also be seen here:
+https://www.dropbox.com/s/x8dur35syc1vhqo/index.html?dl=0
+
 ## Introduction
 'mtcars' is one of the default dataset for practicing and demostration of R programming language. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspectsof automobile design and performance for 32 automobiles (1973-74 models).
 
