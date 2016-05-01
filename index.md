@@ -1,9 +1,9 @@
 ---
-title       : Math Test
-subtitle    : For Developing Data Product course Assignment
-author      : Li Xin
-job         : Easy - Hard
-logo        : Doraemon.png
+title       : Explore Dataset - mtcars
+subtitle    : Course Assignment of Developing Data Product
+author      : leereagle
+job         : https://github.com/leereagle/
+logo        : shiny_logo.png
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -14,55 +14,40 @@ knit        : slidify::knit2slides
 
 ## Introduction
 
-This Math Test slidify is created for Developing Data Product course assignment. Multiple selection questions were designed in each page of slide from page 3. In each questions only has 1 correct answer. Press right arrow key to turn to next page after answer in chosen.
+'mtcars' is one of the default dataset for practicing and demostration of R programming language. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspectsof automobile design and performance for 32 automobiles (1973-74 models).
+
+To learn more about 'mtcars' dataset, type 'help(mtcars)' or '??mtcars' in your R console.
 
 ---&radio
+
 ## Question 1
 
-1 + 1 = ?
+How many names(columns) are there in dataset mtcars in total?
 
-1. 1
-2. _2_
-3. 3
-4. 4
-
-*** .hint
-Need hint??
-
-*** .explanation
-Need explanation??
-
-
----&radio
-## Question 2
-
-If you choose an answer to this question at random, what's the change you will be correct?
-
-1. 25%
-2. 50%
-3. 0%
-4. 25%
+1. 9
+2. 10
+3. _11_
+4. 12
 
 *** .hint
-No hint
+Use names(mtcars) to find out.
 
 *** .explanation
-No answer to this question. sorry
+There are 11 names: "mpg"  "cyl"  "disp" "hp"   "drat" "wt"   "qsec" "vs"   "am"   "gear" "carb"
 
----&radio
-## Question 3
 
-The statement "If x is divisible by 8, then it is divisible by 6" is false if x equals
+---
 
-1. 6
-2. 14
-3. _32_
-4. 48
+## Shiny App - Explore Cars (mtcars)
 
-The slide ends here. Thank you!
+![width](shiny_app_plot.PNG)
 
-*** .hint
-Still no hint here. Please click "explanation" to get detailed explanation.
 
-*** .explanation
-A sentence in "If....then..." form is called an implication. The only time when an implication is false is when the "If" part of the sentence is true and the "then" part of the sentence is false. The number 32 makes the first part of the statement true and the second part of the statement false.
+---
+## How to use
+
+Choose MPG and HP then you will see the information. Choose color to differentiate the dimension with different colors. You can also tick 'Jitter' and 'Smooth' to see their effect. If you wish to compare the data in different facets. 'facet row' and 'facet column' are also available to choose.
+
+![width](shiny_app_control.PNG)
+
+https://leereagle.shinyapps.io/CarExplore/

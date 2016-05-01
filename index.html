@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Math Test</title>
+  <title>Explore Dataset - mtcars</title>
   <meta charset="utf-8">
-  <meta name="description" content="Math Test">
-  <meta name="author" content="Li Xin">
+  <meta name="description" content="Explore Dataset - mtcars">
+  <meta name="author" content="leereagle">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -34,12 +34,12 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <aside class="gdbar">
-    <img src="assets/img/Doraemon.png">
+    <img src="assets/img/shiny_logo.png">
   </aside>
   <hgroup class="auto-fadein">
-    <h1>Math Test</h1>
-    <h2>For Developing Data Product course Assignment</h2>
-    <p>Li Xin<br/>Easy - Hard</p>
+    <h1>Explore Dataset - mtcars</h1>
+    <h2>Course Assignment of Developing Data Product</h2>
+    <p>leereagle<br/>https://github.com/leereagle/</p>
   </hgroup>
   <article></article>  
 </slide>
@@ -51,7 +51,9 @@
     <h2>Introduction</h2>
   </hgroup>
   <article data-timings="">
-    <p>This Math Test slidify is created for Developing Data Product course assignment. Multiple selection questions were designed in each page of slide from page 3. In each questions only has 1 correct answer. Press right arrow key to turn to next page after answer in chosen.</p>
+    <p>&#39;mtcars&#39; is one of the default dataset for practicing and demostration of R programming language. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspectsof automobile design and performance for 32 automobiles (1973-74 models).</p>
+
+<p>To learn more about &#39;mtcars&#39; dataset, type &#39;help(mtcars)&#39; or &#39;??mtcars&#39; in your R console.</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -64,13 +66,13 @@
   <article data-timings="">
     
 <div class="quiz quiz-single well ">
-  <p>1 + 1 = ?</p>
+  <p>How many names(columns) are there in dataset mtcars in total?</p>
 
 <ol>
-<li>1</li>
-<li><em>2</em></li>
-<li>3</li>
-<li>4</li>
+<li>9</li>
+<li>10</li>
+<li><em>11</em></li>
+<li>12</li>
 </ol>
 
   <button class="quiz-submit btn btn-primary">Submit</button>
@@ -79,11 +81,11 @@
   <button class="quiz-clear btn btn-danger">Clear</button>
   
   <div class="quiz-hint">
-  <p>Need hint??</p>
+  <p>Use names(mtcars) to find out.</p>
 
 </div>
 <div class="quiz-explanation">
-  <p>Need explanation??</p>
+  <p>There are 11 names: &quot;mpg&quot;  &quot;cyl&quot;  &quot;disp&quot; &quot;hp&quot;   &quot;drat&quot; &quot;wt&quot;   &quot;qsec&quot; &quot;vs&quot;   &quot;am&quot;   &quot;gear&quot; &quot;carb&quot;</p>
 
 </div>
 </div>
@@ -93,70 +95,26 @@
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Question 2</h2>
+    <h2>Shiny App - Explore Cars (mtcars)</h2>
   </hgroup>
   <article data-timings="">
-    
-<div class="quiz quiz-single well ">
-  <p>If you choose an answer to this question at random, what&#39;s the change you will be correct?</p>
+    <p><img src="shiny_app_plot.PNG" alt="width"></p>
 
-<ol>
-<li>25%</li>
-<li>50%</li>
-<li>0%</li>
-<li>25%</li>
-</ol>
-
-  <button class="quiz-submit btn btn-primary">Submit</button>
-  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
-  <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear btn btn-danger">Clear</button>
-  
-  <div class="quiz-hint">
-  <p>No hint</p>
-
-</div>
-<div class="quiz-explanation">
-  <p>No answer to this question. sorry</p>
-
-</div>
-</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-4" style="background:;">
   <hgroup>
-    <h2>Question 3</h2>
+    <h2>How to use</h2>
   </hgroup>
   <article data-timings="">
-    
-<div class="quiz quiz-single well ">
-  <p>The statement &quot;If x is divisible by 8, then it is divisible by 6&quot; is false if x equals</p>
+    <p>Choose MPG and HP then you will see the information. Choose color to differentiate the dimension with different colors. You can also tick &#39;Jitter&#39; and &#39;Smooth&#39; to see their effect. If you wish to compare the data in different facets. &#39;facet row&#39; and &#39;facet column&#39; are also available to choose.</p>
 
-<ol>
-<li>6</li>
-<li>14</li>
-<li><em>32</em></li>
-<li>48</li>
-</ol>
+<p><img src="shiny_app_control.PNG" alt="width"></p>
 
-<p>The slide ends here. Thank you!</p>
+<p><a href="https://leereagle.shinyapps.io/CarExplore/">https://leereagle.shinyapps.io/CarExplore/</a></p>
 
-  <button class="quiz-submit btn btn-primary">Submit</button>
-  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
-  <button class="quiz-show-answer btn btn-success">Show Answer</button>
-  <button class="quiz-clear btn btn-danger">Clear</button>
-  
-  <div class="quiz-hint">
-  <p>Still no hint here. Please click &quot;explanation&quot; to get detailed explanation.</p>
-
-</div>
-<div class="quiz-explanation">
-  <p>A sentence in &quot;If....then...&quot; form is called an implication. The only time when an implication is false is when the &quot;If&quot; part of the sentence is true and the &quot;then&quot; part of the sentence is false. The number 32 makes the first part of the statement true and the second part of the statement false.</p>
-
-</div>
-</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -179,13 +137,13 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Question 2'>
+        data-slide=3 title='Shiny App - Explore Cars (mtcars)'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Question 3'>
+        data-slide=4 title='How to use'>
          4
       </a>
     </li>
